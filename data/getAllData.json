@@ -1,0 +1,16 @@
+[{
+    "title": "Nike shoes",
+    "category": "shoes",
+    "price": "1299",
+    "rating": "4.2"
+}, {
+    "title": "Roadster tee",
+    "category": "tshirt",
+    "price": "799",
+    "rating": "3.8"
+}, {
+    "title": "Gym gloves",
+    "category": "gym",
+    "price": "499",
+    "rating": "4.0"
+}]
