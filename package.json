@@ -5,7 +5,8 @@
   "main": "netlify/functions/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "netlify deploy --prod"
+    "build": "cross-env NODE_ENV=PROD netlify deploy --prod",
+    "start": "cross-env NODE_ENV=DEV node netlify/functions/app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "netlify-cli": "^16.0.3",
     "netlify-lambda": "^2.0.16",
