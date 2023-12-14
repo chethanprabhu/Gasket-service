@@ -18,7 +18,7 @@ router.get("/allUsers", (req, res) => {
   res.send(allUsers);
 })
 
-if(process.env.NODE_ENV === "DEV") {
+if (process.env.NODE_ENV === "DEV") {
   app.listen(3000);
 } else {
   module.exports.handler = serverless(app);
